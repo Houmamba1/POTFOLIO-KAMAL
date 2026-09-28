@@ -1985,48 +1985,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===================================================================
-   RESPONSIVE DESIGN (Tablets & Mobiles)
-   Targeting: 375px, 390px, 430px, 768px, 1024px
+   RESPONSIVE DESIGN (All Devices: 320px, 375px, 390px, 430px, 768px, 1024px, 1200px)
    =================================================================== */
 
-@media (max-width: 1024px) {
-    .hero-container {
-        gap: 40px;
-    }
-    
-    .hero-title {
-        font-size: 3rem;
-    }
-    
-    .about-cards-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .skill-card-wide {
-        grid-column: span 2;
-    }
-    
-    .falcon-banner {
-        grid-template-columns: 1fr;
-        padding: 40px 30px;
-    }
-    
-    .education-card {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-    
-    .education-divider {
-        width: 100%;
-        height: 1px;
-        min-height: 1px;
-    }
-}
-
+/* --- TABLETS & MEDIUM SCREENS (<= 1100px) --- */
 @media (max-width: 1100px) {
     .header-cta {
         display: none;
@@ -2059,22 +2021,23 @@ h1, h2, h3, h4, h5, h6 {
     
     .nav-list {
         flex-direction: column;
-        gap: 22px;
+        gap: 20px;
         width: 100%;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 28px;
     }
     
     .nav-link {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
         display: inline-block;
-        padding: 10px 0;
+        padding: 8px 0;
     }
     
     .mobile-cta-wrapper {
         display: block;
         width: 100%;
         max-width: 280px;
+        margin: 0 auto;
     }
     
     .mobile-cta {
@@ -2083,17 +2046,31 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 0.95rem;
     }
     
-    /* Hero in 1 Column on tablet / mobile */
+    /* Hero layout */
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 50px;
+        gap: 48px;
     }
     
     .hero-content {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    
+    .hero-title {
+        font-size: clamp(2.4rem, 6vw, 3.2rem);
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(1.15rem, 3vw, 1.35rem);
+    }
+    
+    .hero-description {
+        max-width: 620px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .hero-actions {
@@ -2105,84 +2082,302 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
     }
     
-    .projects-grid {
+    .about-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .skill-card-wide {
+        grid-column: span 2;
+    }
+    
+    .falcon-banner {
         grid-template-columns: 1fr;
+        padding: 40px 30px;
+        gap: 36px;
+        text-align: center;
+    }
+    
+    .falcon-tags-grid {
+        justify-content: center;
+    }
+    
+    .education-card {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 32px 24px;
+    }
+    
+    .education-divider {
+        width: 100%;
+        height: 1px;
+        min-height: 1px;
+    }
+    
+    .education-left {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .education-right {
+        text-align: center;
     }
     
     .contact-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .footer-top {
         flex-direction: column;
-        gap: 30px;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+    }
+    
+    .footer-brand {
+        align-items: center;
+    }
+    
+    .footer-links {
+        justify-content: center;
     }
 }
 
-@media (max-width: 640px) {
+/* --- SMARTPHONES & SMALL SCREENS (<= 768px) --- */
+@media (max-width: 768px) {
     .section {
-        padding: 60px 0;
+        padding: clamp(48px, 8vw, 70px) 0;
     }
     
-    .hero-title {
-        font-size: 2.3rem;
+    .container {
+        padding-left: 18px;
+        padding-right: 18px;
     }
     
-    .hero-subtitle {
-        font-size: 1.15rem;
+    .site-header {
+        height: 66px;
     }
     
-    .hero-description {
-        font-size: 0.98rem;
+    .header-container {
+        height: 66px;
+    }
+    
+    .nav-menu {
+        top: 66px;
+        height: calc(100vh - 66px);
     }
     
     .section-title {
-        font-size: 1.9rem;
+        font-size: clamp(1.75rem, 5.5vw, 2.2rem);
     }
     
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    /* Hero on mobile */
+    .hero-section {
+        padding: 40px 0 60px;
+        min-height: auto;
+        overflow: hidden;
+    }
+    
+    .hero-container {
+        gap: 40px;
+    }
+    
+    .hero-title {
+        font-size: clamp(2.1rem, 7.5vw, 2.7rem);
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(1.05rem, 3.8vw, 1.25rem);
+        margin-bottom: 14px;
+    }
+    
+    .hero-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 28px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto 32px;
+        gap: 12px;
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
+        padding: 14px 22px;
+        font-size: 0.92rem;
+    }
+    
+    .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        padding-top: 18px;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+    
+    .stat-separator {
+        display: none;
+    }
+    
+    .stat-num {
+        font-size: 1.2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.72rem;
+    }
+    
+    /* Hero Photo Card & Floating Badges */
+    .hero-visual {
+        width: 100%;
+        max-width: 100%;
+        overflow: visible;
+    }
+    
+    .visual-wrapper {
+        min-height: 380px;
+        max-width: 310px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .abstract-shape {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .photo-placeholder-card {
+        width: 250px;
+        height: 330px;
+        padding: 10px;
+    }
+    
+    .avatar-icon-wrap {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 12px;
+    }
+    
+    .avatar-icon-wrap svg {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .placeholder-tag {
+        font-size: 0.78rem;
+    }
+    
+    .placeholder-note {
+        font-size: 0.72rem;
+    }
+    
+    .photo-overlay-badge {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+        bottom: 10px;
+    }
+    
+    /* Adjust floating badges so they stay safely on screen */
+    .floating-badge {
+        padding: 5px 10px;
+        font-size: 0.72rem;
+        gap: 6px;
+        border-radius: var(--radius-pill);
+    }
+    
+    .badge-icon {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .badge-top-right {
+        top: 6px;
+        right: 0px;
+    }
+    
+    .badge-mid-left {
+        top: 90px;
+        left: 0px;
+    }
+    
+    .badge-mid-right {
+        top: 170px;
+        right: 0px;
+    }
+    
+    .badge-bot-left {
+        bottom: 24px;
+        left: 0px;
+    }
+    
+    .badge-bot-right {
+        bottom: -6px;
+        right: 14px;
+    }
+    
+    /* About section */
     .about-cards-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
     }
     
+    .info-card {
+        padding: 22px 18px;
+    }
+    
+    .about-lead-box {
+        padding: 20px 16px;
+        margin-bottom: 30px;
+        border-radius: 18px;
+    }
+    
+    .about-lead-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    /* Skills section */
     .skills-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
     }
     
     .skill-card-wide {
         grid-column: span 1;
     }
     
-    .about-lead-box {
-        padding: 24px 20px;
+    .skill-card {
+        padding: 22px 18px;
     }
     
-    .about-lead-text {
-        font-size: 1rem;
+    .skill-title {
+        font-size: 1.2rem;
     }
     
-    .form-row {
-        grid-template-columns: 1fr;
+    .skill-desc {
+        font-size: 0.88rem;
     }
     
-    .contact-form-container {
-        padding: 24px 18px;
-    }
-    
-    .falcon-banner {
-        padding: 30px 20px;
-        border-radius: var(--radius-lg);
-    }
-    
-    .falcon-title {
-        font-size: 1.8rem;
-    }
-    
-    .education-card {
-        padding: 24px 18px;
-    }
-    
+    /* Experience Section */
     .experience-card {
-        padding: 24px 20px;
+        padding: 22px 18px;
+        border-radius: 20px;
     }
     
     .experience-header {
@@ -2191,55 +2386,234 @@ h1, h2, h3, h4, h5, h6 {
         gap: 14px;
     }
     
+    .experience-company-brand {
+        gap: 12px;
+    }
+    
+    .ocp-badge {
+        width: 48px;
+        height: 48px;
+        font-size: 0.95rem;
+    }
+    
+    .experience-role {
+        font-size: 1.2rem;
+    }
+    
+    .experience-desc {
+        font-size: 0.9rem;
+    }
+    
     .experience-highlights-grid {
         grid-template-columns: 1fr;
+        gap: 10px;
     }
     
-    /* Responsive Floating Badges on Mobile */
-    .visual-wrapper {
-        min-height: 420px;
-        max-width: 320px;
+    .exp-highlight-item {
+        font-size: 0.85rem;
     }
     
-    .photo-placeholder-card {
-        width: 270px;
-        height: 360px;
+    /* Falcon Section */
+    .falcon-banner {
+        padding: 28px 18px;
+        border-radius: 20px;
+        gap: 28px;
     }
     
-    .badge-top-right {
-        top: 10px;
-        right: -10px;
+    .falcon-title {
+        font-size: clamp(1.6rem, 5vw, 2rem);
     }
     
-    .badge-mid-left {
-        top: 100px;
-        left: -15px;
+    .falcon-description {
+        font-size: 0.92rem;
+        line-height: 1.6;
+        margin-bottom: 22px;
     }
     
-    .badge-mid-right {
-        top: 200px;
-        right: -15px;
+    .falcon-tags-grid {
+        gap: 8px;
     }
     
-    .badge-bot-left {
-        bottom: 30px;
-        left: -10px;
-    }
-    
-    .badge-bot-right {
-        bottom: -10px;
-        right: 10px;
-    }
-    
-    .floating-badge {
+    .falcon-tag-item {
         padding: 6px 12px;
         font-size: 0.75rem;
     }
     
+    .falcon-logo-card {
+        padding: 24px 16px;
+        max-width: 280px;
+        border-radius: 20px;
+    }
+    
+    .falcon-official-logo {
+        max-height: 75px;
+    }
+    
+    /* Projects Section */
+    .single-project-container {
+        max-width: 100%;
+    }
+    
+    .single-project-card {
+        border-radius: 20px;
+    }
+    
+    .single-project-card .project-media-wrapper {
+        height: 190px;
+    }
+    
+    .project-body {
+        padding: 20px 16px;
+    }
+    
+    .project-title {
+        font-size: 1.2rem;
+    }
+    
+    .project-description {
+        font-size: 0.88rem;
+    }
+    
+    /* Contact Section */
+    .contact-card {
+        padding: 24px 16px;
+        border-radius: 18px;
+    }
+    
+    .contact-card-value {
+        font-size: 1.1rem;
+    }
+    
+    .contact-card-help {
+        font-size: 0.8rem;
+    }
+    
+    .contact-form-container {
+        padding: 24px 16px;
+        border-radius: 20px;
+    }
+    
+    .form-header h3 {
+        font-size: 1.25rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+    
+    .form-submit-btn {
+        width: 100%;
+        min-width: 0;
+        padding: 14px 20px;
+        font-size: 0.9rem;
+    }
+    
+    /* Footer */
+    .site-footer {
+        padding: 50px 0 24px;
+    }
+    
     .footer-bottom {
         flex-direction: column;
-        gap: 16px;
+        gap: 14px;
         text-align: center;
+        font-size: 0.78rem;
+    }
+}
+
+/* --- ULTRA-COMPACT SCREENS (<= 400px - iPhone SE, Galaxy Fold, Small Androids) --- */
+@media (max-width: 400px) {
+    .container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    
+    .brand-logo {
+        gap: 8px;
+    }
+    
+    .logo-badge {
+        width: 32px;
+        height: 32px;
+        font-size: 0.82rem;
+        border-radius: 8px;
+    }
+    
+    .logo-name {
+        font-size: 0.82rem;
+    }
+    
+    .logo-sub {
+        font-size: 0.62rem;
+    }
+    
+    .hero-title {
+        font-size: 1.95rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.98rem;
+    }
+    
+    .hero-description {
+        font-size: 0.88rem;
+    }
+    
+    .visual-wrapper {
+        min-height: 350px;
+        max-width: 270px;
+    }
+    
+    .photo-placeholder-card {
+        width: 220px;
+        height: 300px;
+    }
+    
+    .floating-badge {
+        padding: 4px 8px;
+        font-size: 0.68rem;
+    }
+    
+    .badge-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .hero-stats {
+        max-width: 100%;
+        gap: 4px;
+    }
+    
+    .stat-num {
+        font-size: 1.05rem;
+    }
+    
+    .stat-label {
+        font-size: 0.68rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .falcon-logo-card {
+        max-width: 240px;
+        padding: 18px 12px;
+    }
+    
+    .falcon-official-logo {
+        max-height: 60px;
+    }
+    
+    .contact-card-value {
+        font-size: 0.98rem;
     }
 }
 
