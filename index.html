@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelkader Kamal — Portfolio Ingénieur & Robotique</title>
+    <meta name="description" content="Portfolio professionnel d'Abdelkader Kamal, étudiant ingénieur en 4ème année Génie Industriel à l'ENSA Safi et Président du Club Robotique FALCON.">
+    <meta name="keywords" content="Abdelkader Kamal, ENSA Safi, Génie Industriel, Club FALCON, Robotique, Python, C, MATLAB, Portfolio">
+    <meta name="author" content="Abdelkader Kamal">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Decorative Elements -->
+    <div class="bg-blobs" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="site-header" id="navbar">
+        <div class="container header-container">
+            <a href="#accueil" class="brand-logo" aria-label="Accueil Abdelkader Kamal">
+                <div class="logo-badge">AK</div>
+                <div class="logo-text">
+                    <span class="logo-name">ABDELKADER KAMAL</span>
+                    <span class="logo-sub">Génie Industriel • ENSA Safi</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link active">ACCUEIL</a></li>
+                    <li><a href="#a-propos" class="nav-link">À PROPOS</a></li>
+                    <li><a href="#experience" class="nav-link">EXPÉRIENCE</a></li>
+                    <li><a href="#competences" class="nav-link">COMPÉTENCES</a></li>
+                    <li><a href="#falcon" class="nav-link">FALCON</a></li>
+                    <li><a href="#projets" class="nav-link">PROJETS</a></li>
+                    <li><a href="#formation" class="nav-link">FORMATION</a></li>
+                    <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+                <div class="mobile-cta-wrapper">
+                    <a href="#contact" class="btn btn-primary btn-sm mobile-cta">ME CONTACTER</a>
+                </div>
+            </nav>
+
+            <div class="header-right">
+                <a href="#contact" class="btn btn-primary header-cta">
+                    <span>ME CONTACTER</span>
+                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- ===================================================================
+             SECTION HERO
+             =================================================================== -->
+        <section id="accueil" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content reveal-on-scroll">
+                    <h1 class="hero-title">
+                        Je suis <br>
+                        <span class="text-gradient">Abdelkader Kamal</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Étudiant ingénieur en <span class="highlight-text">Génie Industriel</span> à l'<span class="highlight-text">ENSA Safi</span>
+                    </p>
+
+                    <p class="hero-description">
+                        "Étudiant en 4ème année du cycle ingénieur en Génie Industriel à l'ENSA Safi, passionné par la programmation, la robotique, la technologie et l'ingénierie."
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#competences" class="btn btn-primary btn-lg">
+                            <span>VOIR MES COMPÉTENCES</span>
+                            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <polyline points="19 12 12 19 5 12"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary btn-lg">
+                            <span>ME CONTACTER</span>
+                            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="hero-stat-item">
+                            <span class="stat-num">4<small>ème</small></span>
+                            <span class="stat-label">Année Ingénieur</span>
+                        </div>
+                        <div class="stat-separator"></div>
+                        <div class="hero-stat-item">
+                            <span class="stat-num">ENSA</span>
+                            <span class="stat-label">Safi, Maroc</span>
+                        </div>
+                        <div class="stat-separator"></div>
+                        <div class="hero-stat-item">
+                            <span class="stat-num">FALCON</span>
+                            <span class="stat-label">Président Club</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual / Photo Placeholder Area -->
+                <div class="hero-visual reveal-on-scroll" data-delay="200">
+                    <div class="visual-wrapper">
+                        <!-- Abstract violet gradient backdrop -->
+                        <div class="abstract-shape"></div>
+                        
+                        <!-- Photo Frame Container -->
+                        <div class="photo-placeholder-card">
+                            <div class="photo-placeholder-inner">
+                                <!-- Instructions: Remplacer le contenu ci-dessous par votre balise <img src="chemin/vers/photo.jpg" alt="Abdelkader Kamal"> -->
+                                <div class="placeholder-graphic">
+                                    <div class="avatar-icon-wrap">
+                                        <svg width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                    </div>
+                                    <span class="placeholder-tag">EMPLACEMENT PHOTO</span>
+                                    <span class="placeholder-note">Insérez votre photo professionnelle ici</span>
+                                </div>
+                                <div class="photo-overlay-badge">
+                                    <span>Abdelkader Kamal • ENSA Safi</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badges Around Photo -->
+                        <div class="floating-badge badge-top-right float-anim-1">
+                            <div class="badge-icon icon-gi">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                            </div>
+                            <span>Génie Industriel</span>
+                        </div>
+
+                        <div class="floating-badge badge-mid-left float-anim-2">
+                            <div class="badge-icon icon-img-wrap">
+                                <img src="images/python-logo.png" alt="Python Logo" class="badge-lang-img">
+                            </div>
+                            <span>Python</span>
+                        </div>
+
+                        <div class="floating-badge badge-mid-right float-anim-3">
+                            <div class="badge-icon icon-img-wrap">
+                                <img src="images/c-logo.png" alt="C Logo" class="badge-lang-img">
+                            </div>
+                            <span>Langage C</span>
+                        </div>
+
+                        <div class="floating-badge badge-bot-left float-anim-4">
+                            <div class="badge-icon icon-img-wrap">
+                                <img src="images/matlab-logo.png" alt="MATLAB Logo" class="badge-lang-img">
+                            </div>
+                            <span>MATLAB</span>
+                        </div>
+
+                        <div class="floating-badge badge-bot-right float-anim-5">
+                            <div class="badge-icon icon-robot">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><line x1="8" y1="16" x2="8" y2="16"></line><line x1="16" y1="16" x2="16" y2="16"></line></svg>
+                            </div>
+                            <span>Robotique</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION À PROPOS
+             =================================================================== -->
+        <section id="a-propos" class="section about-section">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <h2 class="section-title">
+                        Étudiant ingénieur <br>
+                        <span class="text-gradient">en Génie Industriel</span>
+                    </h2>
+                </div>
+
+                <div class="about-lead-box reveal-on-scroll">
+                    <p class="about-lead-text">
+                        "Je suis Abdelkader Kamal, étudiant en 4ème année du cycle ingénieur en Génie Industriel à l'ENSA Safi. Je m'intéresse particulièrement à l'ingénierie, à la programmation, à la robotique et aux nouvelles technologies. Mon parcours me permet de développer progressivement mes compétences techniques, analytiques et de résolution de problèmes."
+                    </p>
+                </div>
+
+                <!-- 4 Bento Cards -->
+                <div class="about-cards-grid">
+                    <!-- Carte 1 -->
+                    <div class="info-card reveal-on-scroll" data-delay="100">
+                        <div class="info-card-header">
+                            <div class="info-card-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                            </div>
+                            <span class="info-card-number">01</span>
+                        </div>
+                        <div class="info-card-tag">FORMATION</div>
+                        <h3 class="info-card-title">4ème année cycle ingénieur</h3>
+                        <p class="info-card-sub">ENSA Safi</p>
+                    </div>
+
+                    <!-- Carte 2 -->
+                    <div class="info-card reveal-on-scroll" data-delay="200">
+                        <div class="info-card-header">
+                            <div class="info-card-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg>
+                            </div>
+                            <span class="info-card-number">02</span>
+                        </div>
+                        <div class="info-card-tag">FILIÈRE</div>
+                        <h3 class="info-card-title">Génie Industriel</h3>
+                        <p class="info-card-sub">Optimisation, Modélisation & Management</p>
+                    </div>
+
+                    <!-- Carte 3 -->
+                    <div class="info-card reveal-on-scroll" data-delay="300">
+                        <div class="info-card-header">
+                            <div class="info-card-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 21h18"></path>
+                                    <path d="M5 21V7l8-4 8 4v14"></path>
+                                    <path d="M9 10a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v11H9V10z"></path>
+                                </svg>
+                            </div>
+                            <span class="info-card-number">03</span>
+                        </div>
+                        <div class="info-card-tag">ÉTABLISSEMENT</div>
+                        <h3 class="info-card-title">ENSA Safi</h3>
+                        <p class="info-card-sub">École Nationale des Sciences Appliquées</p>
+                    </div>
+
+                    <!-- Carte 4 -->
+                    <div class="info-card card-highlight reveal-on-scroll" data-delay="400">
+                        <div class="info-card-header">
+                            <div class="info-card-icon icon-glow">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                            </div>
+                            <span class="info-card-number">04</span>
+                        </div>
+                        <div class="info-card-tag">RESPONSABILITÉ</div>
+                        <h3 class="info-card-title">Président du Club</h3>
+                        <p class="info-card-sub">Club Robotique FALCON</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION EXPÉRIENCE PROFESSIONNELLE
+             =================================================================== -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <h2 class="section-title">
+                        Expérience & <br>
+                        <span class="text-gradient">Immersion Industrielle</span>
+                    </h2>
+                    <p class="section-subtitle">Application pratique des concepts d'ingénierie au cœur de grands complexes industriels.</p>
+                </div>
+
+                <div class="experience-container reveal-on-scroll">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-company-brand">
+                                <div class="ocp-badge">
+                                    <span class="ocp-initials">OCP</span>
+                                </div>
+                                <div class="experience-titles">
+                                    <span class="experience-badge-tag">Stage d'Ingénierie — 3ème Année</span>
+                                    <h3 class="experience-role">Stagiaire en Génie Industriel</h3>
+                                    <p class="experience-company-name">
+                                        <strong>OCP Group</strong> — Complexe Industriel de Safi
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="experience-meta-pill">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <span>3ème Année Ingénieur</span>
+                            </div>
+                        </div>
+
+                        <div class="experience-body">
+                            <p class="experience-desc">
+                                Stage technique et d'immersion industrielle réalisé au sein du <strong>Complexe OCP Safi</strong>. Découverte approfondie des installations industrielles de production, étude des flux de matières, observation des procédés de transformation chimique et analyse des leviers d'optimisation et de maintenance industrielle.
+                            </p>
+
+                            <div class="experience-highlights-grid">
+                                <div class="exp-highlight-item">
+                                    <div class="exp-check-icon">✓</div>
+                                    <span>Observation et analyse des processus industriels continus</span>
+                                </div>
+                                <div class="exp-highlight-item">
+                                    <div class="exp-check-icon">✓</div>
+                                    <span>Immersion dans les démarches de gestion et d'optimisation</span>
+                                </div>
+                                <div class="exp-highlight-item">
+                                    <div class="exp-check-icon">✓</div>
+                                    <span>Sensibilisation aux normes de sécurité et d'environnement (HSE)</span>
+                                </div>
+                                <div class="exp-highlight-item">
+                                    <div class="exp-check-icon">✓</div>
+                                    <span>Collaboration avec les équipes techniques sur le terrain</span>
+                                </div>
+                            </div>
+
+                            <div class="experience-tags">
+                                <span class="exp-tag">OCP Safi</span>
+                                <span class="exp-tag">Génie Industriel</span>
+                                <span class="exp-tag">Processus Industriels</span>
+                                <span class="exp-tag">Optimisation des Flux</span>
+                                <span class="exp-tag">Safi, Maroc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION COMPÉTENCES
+             =================================================================== -->
+        <section id="competences" class="section skills-section">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <h2 class="section-title">
+                        Mes compétences <br>
+                        <span class="text-gradient">techniques</span>
+                    </h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- CARTE 01 : PYTHON -->
+                    <div class="skill-card reveal-on-scroll" data-delay="100">
+                        <div class="skill-card-top">
+                            <span class="skill-index">CARTE 01</span>
+                            <div class="skill-icon-wrap skill-logo-wrap">
+                                <img src="images/python-logo.png" alt="Python Logo" class="skill-lang-logo">
+                            </div>
+                        </div>
+                        <h3 class="skill-title">PYTHON</h3>
+                        <p class="skill-desc">Programmation et résolution de problèmes techniques.</p>
+                        <div class="skill-pill-tag">Développement & Scripting</div>
+                    </div>
+
+                    <!-- CARTE 02 : C -->
+                    <div class="skill-card reveal-on-scroll" data-delay="200">
+                        <div class="skill-card-top">
+                            <span class="skill-index">CARTE 02</span>
+                            <div class="skill-icon-wrap skill-logo-wrap">
+                                <img src="images/c-logo.png" alt="C Logo" class="skill-lang-logo">
+                            </div>
+                        </div>
+                        <h3 class="skill-title">C</h3>
+                        <p class="skill-desc">Programmation et développement algorithmique.</p>
+                        <div class="skill-pill-tag">Systèmes & Algorithmes</div>
+                    </div>
+
+                    <!-- CARTE 03 : MATLAB -->
+                    <div class="skill-card reveal-on-scroll" data-delay="300">
+                        <div class="skill-card-top">
+                            <span class="skill-index">CARTE 03</span>
+                            <div class="skill-icon-wrap skill-logo-wrap">
+                                <img src="images/matlab-logo.png" alt="MATLAB Logo" class="skill-lang-logo">
+                            </div>
+                        </div>
+                        <h3 class="skill-title">MATLAB</h3>
+                        <p class="skill-desc">Calcul scientifique, analyse et applications d'ingénierie.</p>
+                        <div class="skill-pill-tag">Calcul Scientifique & Simulation</div>
+                    </div>
+
+                    <!-- CARTE 04 : GÉNIE INDUSTRIEL -->
+                    <div class="skill-card reveal-on-scroll" data-delay="400">
+                        <div class="skill-card-top">
+                            <span class="skill-index">CARTE 04</span>
+                            <div class="skill-icon-wrap">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="skill-title">GÉNIE INDUSTRIEL</h3>
+                        <p class="skill-desc">Analyse, optimisation et résolution de problèmes industriels.</p>
+                        <div class="skill-pill-tag">Optimisation & Processus</div>
+                    </div>
+
+                    <!-- CARTE 05 : ROBOTIQUE -->
+                    <div class="skill-card skill-card-wide reveal-on-scroll" data-delay="500">
+                        <div class="skill-card-top">
+                            <span class="skill-index">CARTE 05</span>
+                            <div class="skill-icon-wrap">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                                    <circle cx="12" cy="5" r="2"></circle>
+                                    <path d="M12 7v4"></path>
+                                    <line x1="8" y1="16" x2="8" y2="16"></line>
+                                    <line x1="16" y1="16" x2="16" y2="16"></line>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="skill-title">ROBOTIQUE</h3>
+                        <p class="skill-desc">Intérêt pour la robotique, la technologie et les systèmes automatisés.</p>
+                        <div class="skill-pill-tag">Systèmes Automatisés & Mécatronique</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION FALCON (LEADERSHIP)
+             =================================================================== -->
+        <section id="falcon" class="section falcon-section">
+            <div class="container">
+                <div class="falcon-banner reveal-on-scroll">
+                    <div class="falcon-bg-glow"></div>
+                    <div class="falcon-content">
+                        <h2 class="falcon-title">
+                            Président du <br>
+                            <span class="falcon-title-accent">Club Robotique FALCON</span>
+                        </h2>
+
+                        <p class="falcon-description">
+                            "En tant que président du Club Robotique FALCON, je participe à la création d'un environnement collaboratif autour de la robotique, de la technologie et de l'innovation, tout en encourageant le travail en équipe et le développement des compétences techniques."
+                        </p>
+
+                        <!-- Tags List -->
+                        <div class="falcon-tags-grid">
+                            <div class="falcon-tag-item">
+                                <span>LEADERSHIP</span>
+                            </div>
+                            <div class="falcon-tag-item">
+                                <span>ROBOTIQUE</span>
+                            </div>
+                            <div class="falcon-tag-item">
+                                <span>INNOVATION</span>
+                            </div>
+                            <div class="falcon-tag-item">
+                                <span>TRAVAIL D'ÉQUIPE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logo & Branding Card Side -->
+                    <div class="falcon-visual-side">
+                        <div class="falcon-logo-card">
+                            <div class="falcon-logo-container">
+                                <img src="images/falcon-logo.png" alt="Logo Club Robotique FALCON" class="falcon-official-logo">
+                            </div>
+                            <div class="falcon-status-pill">
+                                <span class="pulse-indicator"></span>
+                                <span>Club Robotique • ENSA Safi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION PROJETS
+             =================================================================== -->
+        <section id="projets" class="section projects-section">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <h2 class="section-title">
+                        Projet & <br>
+                        <span class="text-gradient">Travaux d'ingénierie</span>
+                    </h2>
+                    <p class="section-subtitle">Emplacement dédié pour accueillir votre projet et réalisation technique.</p>
+                </div>
+
+                <div class="single-project-container">
+                    <!-- PROJET UNIQUE -->
+                    <article class="project-card single-project-card reveal-on-scroll" data-delay="100">
+                        <div class="project-media-wrapper">
+                            <div class="project-image-placeholder">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon">
+                                        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                    </div>
+                                    <span class="placeholder-label">Emplacement image / aperçu du projet</span>
+                                </div>
+                            </div>
+                            <div class="project-number-badge">PROJET 01</div>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">Titre du projet</h3>
+                            <p class="project-description">
+                                Description détaillée du projet à ajouter. Cet espace est réservé pour détailler les objectifs, la problématique industrielle, la méthodologie mise en œuvre et les résultats obtenus.
+                            </p>
+                            <div class="project-footer">
+                                <a href="#contact" class="btn btn-project">
+                                    <span>En savoir plus</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION FORMATION
+             =================================================================== -->
+        <section id="formation" class="section education-section">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <h2 class="section-title">
+                        Parcours <br>
+                        <span class="text-gradient">Académique</span>
+                    </h2>
+                </div>
+
+                <div class="education-card-wrapper reveal-on-scroll">
+                    <div class="education-card">
+                        <div class="education-left">
+                            <div class="school-badge-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 21h18"></path>
+                                    <path d="M5 21V7l8-4 8 4v14"></path>
+                                    <path d="M9 10a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v11H9V10z"></path>
+                                </svg>
+                            </div>
+                            <div class="school-meta">
+                                <span class="school-year">Cycle Ingénieur d'État</span>
+                                <h3 class="school-name">ENSA SAFI</h3>
+                                <p class="school-city">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                    Safi, Maroc
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="education-divider"></div>
+
+                        <div class="education-right">
+                            <div class="degree-pill">En cours d'études</div>
+                            <h4 class="degree-title">4ème année du cycle ingénieur</h4>
+                            <p class="degree-major">Filière : <strong>Génie Industriel</strong></p>
+                            <p class="degree-description">
+                                Formation d'excellence axée sur les sciences de l'ingénieur, l'optimisation des systèmes de production, l'automatique, la gestion des opérations et les technologies informatiques appliquées à l'industrie.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION CONTACT
+             =================================================================== -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <h2 class="section-title">
+                        Restons en <br>
+                        <span class="text-gradient">contact</span>
+                    </h2>
+                    <p class="contact-lead-text">
+                        "Vous souhaitez échanger autour de l'ingénierie, de la robotique, de la technologie ou d'une éventuelle collaboration ? N'hésitez pas à me contacter."
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- CARTE EMAIL -->
+                    <div class="contact-card reveal-on-scroll" data-delay="100">
+                        <div class="contact-card-icon-wrap">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <span class="contact-card-label">EMAIL PROFESSIONNEL</span>
+                        <h3 class="contact-card-value" id="email-value-text">VOTRE EMAIL ICI</h3>
+                        <p class="contact-card-help">Modifiez cette adresse directement dans le code source</p>
+                        <div class="contact-action-box">
+                            <!-- Modifiable : remplacer href="mailto:votre-email@example.com" -->
+                            <a href="mailto:votre-email@example.com" class="btn btn-outline-purple btn-block">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <span>Envoyer un email</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CARTE LINKEDIN -->
+                    <div class="contact-card reveal-on-scroll" data-delay="200">
+                        <div class="contact-card-icon-wrap linkedin-icon-wrap">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </div>
+                        <span class="contact-card-label">RÉSEAU PROFESSIONNEL</span>
+                        <h3 class="contact-card-value">Abdelkader Kamal</h3>
+                        <p class="contact-card-help">linkedin.com/in/abdelkader-kamal-73a64b326</p>
+                        <div class="contact-action-box">
+                            <a href="https://www.linkedin.com/in/abdelkader-kamal-73a64b326?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="btn btn-outline-purple btn-block">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                <span>Consulter mon profil LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire de contact rapide -->
+                <div class="contact-form-container reveal-on-scroll" data-delay="300">
+                    <div class="form-header">
+                        <h3>Envoyer un message direct</h3>
+                        <p>Remplissez ce formulaire pour m'adresser directement un message.</p>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom">Nom & Prénom</label>
+                                <input type="text" id="nom" name="nom" placeholder="Ex: Jean Dupont" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Votre adresse email</label>
+                                <input type="email" id="email" name="email" placeholder="Ex: jean.dupont@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sujet">Objet du message</label>
+                            <input type="text" id="sujet" name="sujet" placeholder="Ex: Échange technique / Projet Robotique" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Votre message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg form-submit-btn">
+                            <span>ENVOYER LE MESSAGE</span>
+                            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                    <div id="form-feedback" class="form-feedback" style="display: none;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================================================================
+         PIED DE PAGE (FOOTER)
+         =================================================================== -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-badge">AK</div>
+                        <span class="footer-name">ABDELKADER KAMAL</span>
+                    </div>
+                    <p class="footer-bio">
+                        Étudiant ingénieur en Génie Industriel — ENSA Safi <br>
+                        Président — Club Robotique FALCON
+                    </p>
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/abdelkader-kamal-73a64b326?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn Abdelkader Kamal">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-nav">
+                    <span class="footer-nav-title">Navigation</span>
+                    <ul class="footer-links">
+                        <li><a href="#accueil">ACCUEIL</a></li>
+                        <li><a href="#a-propos">À PROPOS</a></li>
+                        <li><a href="#experience">EXPÉRIENCE</a></li>
+                        <li><a href="#competences">COMPÉTENCES</a></li>
+                        <li><a href="#falcon">FALCON</a></li>
+                        <li><a href="#projets">PROJETS</a></li>
+                        <li><a href="#formation">FORMATION</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 Abdelkader Kamal. Tous droits réservés.</p>
+                <a href="#accueil" class="back-to-top" aria-label="Remonter en haut de la page">
+                    <span>Haut de page</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
